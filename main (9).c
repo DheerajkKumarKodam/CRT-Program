@@ -1,11 +1,13 @@
 #include<stdio.h>
 main()
 {
-    int a;
-    a=1;
-    while(a<=20)
-    {
-        printf("\n 5 X %d = %d",a,a*5);
-        a++;
-    }
+    int n;
+    printf("\n enter no. ");
+    scanf(" %d",&n);                                  /* goto */
+    if(n%2==0)
+    goto even;
+    else
+    goto odd;
+    even:printf(" even");exit(0);
+    odd:printf("odd");
 }

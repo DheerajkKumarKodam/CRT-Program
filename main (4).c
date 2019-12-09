@@ -1,11 +1,16 @@
 #include<stdio.h>
 main()
 {
-int year;
-printf("\n enter a year ");
-scanf("%d",&year);
-if((year%4==0 && year%100!=0) || year%400==0)
-printf("\n Leap Year");
+int i,n,sum=0;
+printf("\n enter");                            /* perfect no. */
+scanf("%d",&n);
+for(i=1;i<n;i++)
+{
+    if(n%i==0)
+    sum=sum+i;
+}
+if(sum==n)
+    printf("\n perfect no.");
 else
-printf("\n Not a Leap Year");
+printf("\n not a perfect square");
 }
